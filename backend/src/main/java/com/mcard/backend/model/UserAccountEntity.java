@@ -11,7 +11,6 @@ public class UserAccountEntity {
     private String password;
     @JsonIgnore
     @OneToOne
-    @JoinColumn(name = "userId")
     private UserEntity user;
 
     public UserAccountEntity() {
